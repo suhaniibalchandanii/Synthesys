@@ -5,7 +5,6 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# ✅ Enable CORS (VERY IMPORTANT)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # allow all origins (for dev)
